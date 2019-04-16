@@ -2,6 +2,7 @@
 layout: post
 title: Github Pages
 img: assets/img/portfolio/github-pages.png
+date: 2019-04-16 19:43 -0400
 description: >
   GitHub Pages is a static site hosting service designed to host your personal,
   organization, or project pages directly from a GitHub repository

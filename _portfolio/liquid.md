@@ -2,6 +2,7 @@
 layout: post
 title: Liquid
 img: assets/img/portfolio/liquid.png
+date: 2019-04-16 19:43 -0400
 description: >
   Safe, customer-facing template language for flexible web apps
 ---
