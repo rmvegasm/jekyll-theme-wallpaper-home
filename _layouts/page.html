@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<main class="container {% if site.dark %} bg-dark 
+   {% else %} bg-light text-dark {% endif %} d-flex flex-column
+   flex-fill p-4">
+  {{ content }}
+  <hr>
+  <a href="#" class="btn btn-block">
+    <span class="fas fa-lg fa-angle-double-up"></span>
+  </a>
+</main>
+{% include footer.html %}

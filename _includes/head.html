@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="{{ site.description }}">
+    <meta name="author" content="{{ site.author }}">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>{{ site.title }}</title>
+
+    <!-- Bootstrap core CSS -->
+    
+    <link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
+
+    <!-- Fontawesome -->
+    
+    <link rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    crossorigin="anonymous">
+   
+     <!-- MathJax -->
+
+    {% if site.math or page.math %}
+    <script 
+    src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML'
+    async></script>
+    {% endif %}
+
+    <!-- Google Fonts -->
+    
+    {% if site.google-fonts %}
+      {% assign gf = site.google-fonts %}
+      {%- capture which -%}
+        {%- for font in gf -%}
+          {%- if font -%}|{{ font.last }}{%- endif -%}
+        {%- endfor -%}
+      {%- endcapture -%}
+      {%- assign request = which | remove_first: "|" -%}
+    <link href="https://fonts.googleapis.com/css?family={{ request }}"
+    rel="stylesheet">
+    {% endif %}
+
+    <!-- Custom styles for this template -->
+    
+    <link href="{{ 'assets/css/wallpaper-home.css' | absolute_url }}" rel="stylesheet">
+  
+  </head>
+  
+  <body>
+    <div class="container d-flex h-100 p-3 flex-column text-light">

@@ -1,0 +1,29 @@
+{% if site.portfolio %}
+<div class="d-flex flex-wrap justify-content-around">
+  {% for post in site.portfolio %}
+  <div class="card {% if site.dark %} bg-dark {% else %} bg-light text-dark {% endif %}
+  shadow rounded"
+    style="max-width: 21rem;">
+      {% if post.img %}
+      <img src="{{ post.img }}" class="card-img-top" alt="logo">
+      {% endif %}
+      <div class="card-body">
+        <h3 class="card-title">{{ post.title }}</h3>
+          {% if post.tags %}
+            {% for tag in post.tags %}
+              <span class="badge badge-pill
+              {% if site.dark %} badge-light
+              {% else %} badge-dark {% endif %}">{{ tag }}</span>
+            {% endfor %}
+          {% endif %}
+        {% if post.description %}
+        <p class="card-text">{{ post.description }}</p>
+        {% endif %}
+        <a href="{{ post.url | absolute_url }}" class="btn btn-block stretched-link">
+          <span class="fas fa-plus"></span>
+        </a>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+{% endif %}

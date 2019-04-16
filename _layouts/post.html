@@ -1,0 +1,18 @@
+---
+layout: page
+---
+
+<div class="container">
+  {% if page.img %}
+  <img src="{{ page.img | absolute_url }}" class="img-fluid d-block mx-auto" alt="page.img">
+  <hr>
+  {% endif %}
+  <h1>{{ page.title }}</h1>
+  <h2 class="lead text-muted">{{ page.date | date_to_string }}</h2>
+  {% include tags.html %}
+  <hr>
+</div>
+<div class="container">
+  {{ content }}
+  <hr>
+</div>

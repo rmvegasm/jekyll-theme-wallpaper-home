@@ -1,0 +1,109 @@
+mail:
+  - style: fas
+  - icon: fa-envelope
+  - url: "mailto:"
+
+twitter:
+  - style: fab
+  - icon: fa-twitter 
+  - url: "https://twitter.com/"
+
+rss: 
+  - style: fas
+  - icon: fa-rss
+  - url: feed.xml
+
+behance:
+  - style: fab
+  - icon: fa-behance-square
+  - url: "https://www.behance.net/"
+
+bitbucket:
+  - style: fab
+  - icon: fa-bitbucket
+  - url: "https://bitbucket.org/"
+
+dribbble:
+  - style: fab
+  - icon: fa-dribble
+  - url: "https://dribble.com/"
+
+facebook:
+  - style: fab
+  - icon: fa-facebook
+  - url: "https://www.facebook.com/"
+
+flickr:
+  - style: fab
+  - icon: fa-flickr
+  - url: "https://www.flickr.com/photos/"
+
+gitlab:
+  - style: fab
+  - icon: fa-gitlab
+  - url: "https://gitlab.com" 
+
+github:
+  - style: fab
+  - icon: fa-github
+  - url: "https://github.com/"
+
+instagram:
+  - style: fab
+  - icon: fa-instagram
+  - url: "http://instagram.com/"
+
+keybase:
+  - style: fab
+  - icon: fa-keybase
+  - url: "https://keybase.io/"
+
+linkedin:
+  - style: fab
+  - icon: fa-linkedin
+
+pinterest:
+  - style: fab
+  - icon: fa-pinterest
+  - url: "http://www.pinterest.com/"
+
+researchgate:
+  - style: fab
+  - icon: fa-researchgate
+
+reddit:
+  - style: fab
+  - icon: fa-reddit
+  - url: "https://www.reddit.com/user/"
+
+soundcloud:
+  - style: fab
+  - icon: fa-soundcloud
+  - url: "https://soundcloud.com/"
+
+stack_exchange:
+  - style: fab
+  - icon: fa-stack-exchange
+
+tumblr:
+  - style: fab
+  - icon: tumblr-square
+  - url: "http://"
+  - append: ".tumblr.com/"
+
+vimeo:
+  - style: fab
+  - icon: fa-vimeo
+  - url: "https://vimeo.com/"
+
+wordpress:
+  - style: fab
+  - icon: fa-wordpress-simple
+  - url: "https://"
+  - append: ".wordpress.com/"
+
+youtube:
+  - style: fab
+  - icon: fa-youtube
+  - url: "https:/www.youtube.com/user/"
+

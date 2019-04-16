@@ -1,0 +1,106 @@
+---
+---
+
+/* wallpaper */
+
+html, body {
+  height: 100%;
+  line-height: 2;
+}
+
+body {
+  background: linear-gradient(
+      rgba(0, 0, 0, {{ site.overlay-top }}),
+      rgba(0, 0, 0, {{ site.overlay-bottom }})
+    ), url({{ site.background-img | absolute_url }}) center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+}
+
+/* Google fonts */
+
+{% if site.google-fonts.main-font  %}
+{% assign main = site.google-fonts.main-font | split: ":" %}
+
+body {
+  font-family: {{ main.first | replace: "+", " " }};
+}
+
+{% endif %}
+
+{% if site.google-fonts.header-font %}
+{% assign header = site.google-fonts.header-font | split: ":" %}
+
+h1, h2,
+h3, h4,
+h5, h6 {
+  font-family: {{ header.first | replace: "+", " " }};
+}
+
+{% endif %}
+
+{% if site.google-fonts.code-font %}
+{% assign code = site.google-fonts.code-font | split: ":" %}
+
+code, pre {
+  font-family: {{ code.first | replace: "+", " " }}, moospace;
+}
+
+{% endif %}
+
+/* Landing page */
+
+#intro-message {
+  max-width: {{ site.intro-width }};
+}
+
+/* link-color */
+
+{% if site.link-color %}
+
+$link-color: {{ site.link-color }};
+
+a {
+  color: $link-color;
+}
+
+a:hover {
+  color: darken($link-color, 15%);
+}
+
+{% endif %}
+
+/* Code */
+
+pre, code {
+  font-size: 100%;
+}
+
+pre {
+  padding: 1rem;
+}
+
+code {
+  padding: 1px 5px;
+  border-radius: 3px;
+}
+
+.highlighter-rouge {
+  margin-block-start: 1rem;
+  margin-block-end: 1rem;
+}
+
+/* Syntax Highlighting */
+
+{% if site.syntax-theme %}
+{% include_relative {{ site.syntax-theme }} %}
+{% elsif site.dark %}
+{% include_relative gruvbox.css %}
+{% else %}
+{% include_relative gruvbox-light.css %}
+{% endif %}

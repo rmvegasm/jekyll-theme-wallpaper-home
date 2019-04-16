@@ -1,0 +1,33 @@
+<header>
+  <nav class="navbar navbar-dark navbar-expand-md">
+    <a class="navbar-brand" href={{ site.url }}>
+      <img src={{ site.logo | absolute_url }} alt="logo" width="43px">
+      <h2 class="navbar-text lead text-white p-2">{{ site.title }}</h2>
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-toggle="collapse"
+      data-target="#thenavmenu">
+      <span class="fas fa-lg fa-bars"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse flex-row-reverse" id="thenavmenu">
+      <ul class="navbar-nav text-right">
+        {% for item in site.pages %}
+          {% if item.title and item.hide != true %}
+        <li class="nav-item {% if page.url == item.url %} active {% endif %}">
+          <a class="nav-link" href={{ item.url | absolute_url }}>{{ item.title }}</a>
+        </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  </nav>
+  {% if page.layout == "page" or page.layout == "blog" %}
+  <div class="jumbotron bg-transparent text-center">
+    <h1 class="display-3 p-3">{{ page.title }}</h1>
+    {% if page.subtitle %}
+    <h2 class="lead">{{ page.subtitle }}</h2>
+    {% endif %}
+  </div>
+  {% endif %}
+</header>
+    

@@ -1,0 +1,47 @@
+/* wallpaper */
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.8)
+    ), url('assets/img/luma-full.png') center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+}
+
+/* Google fonts */
+
+body {
+  font-family: Open Sans;
+}
+
+h1, h2,
+h3, h4,
+h5, h6 {
+  font-family: Oswald;
+}
+
+/* Landing page */
+
+#intro-message {
+  max-width: 35em;
+}
+
+/* link-color */
+
+a {
+  color: #f47f00;
+}
+
+a:hover {
+  color: #d95c21;
+}

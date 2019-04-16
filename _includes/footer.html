@@ -1,0 +1,13 @@
+<footer class="mt-auto text-center 
+  {% unless page.layout == 'home' %}
+    {% if site.dark %} bg-dark 
+    {% else %} bg-light text-dark
+    {% endif %}
+  {% endunless %}">
+  <div id="icons" class="d-flex flex-wrap justify-content-around pt-4">
+    {% include icons.html %}
+  </div>
+  <div class="container small p-4">
+    <p>{{ site.footer-text }}</p>
+  </div>
+</footer>
