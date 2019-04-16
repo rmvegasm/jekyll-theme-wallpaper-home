@@ -1,6 +1,6 @@
 # SITE CONFIGURATION
-baseurl:
-url: "https://github.com/rmvegasm/jekyll-theme-wallpaper-home/"
+baseurl: "jekyll-theme-wallpaper-home/"
+url: "https://rmvegasm.github.io/"
 title: "Wallpaper Home" # site's title
 description: "jekyll-theme-wallpaper-home" # used by search engines
 author: "Rodrigo M Vega"
