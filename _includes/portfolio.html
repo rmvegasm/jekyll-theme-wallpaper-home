@@ -9,13 +9,7 @@
       {% endif %}
       <div class="card-body">
         <h3 class="card-title">{{ post.title }}</h3>
-          {% if post.tags %}
-            {% for tag in post.tags %}
-              <span class="badge badge-pill
-              {% if site.dark %} badge-light
-              {% else %} badge-dark {% endif %}">{{ tag }}</span>
-            {% endfor %}
-          {% endif %}
+        {% include tags.html %}
         {% if post.description %}
         <p class="card-text">{{ post.description }}</p>
         {% endif %}

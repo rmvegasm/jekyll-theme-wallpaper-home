@@ -2,7 +2,7 @@
 layout: post
 title: Jekyll
 img: assets/img/portfolio/jekyll.png
-date: 2019-04-16 19:43 -0400
+date: 2019-02-16 19:43 -0400
 description: >
   Transform your plain text into static websites and blogs
 ---

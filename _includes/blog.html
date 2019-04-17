@@ -5,13 +5,7 @@
 <div class="jumbotron position-relative bg-transparent shadow rounded">
   <h1>{{ post.title }}</h1>
   <h2 class="lead text-muted">{{ post.date | date_to_string }}</h2>
-  {% if post.tags %}
-    {% for tag in post.tags %}
-      <span class="badge badge-pill
-      {% if site.dark %} badge-light
-      {% else %} badge-dark {% endif %}">{{ tag }}</span>
-    {% endfor %}
-  {% endif %}
+  {% include tags.html %}
   <hr class="my-2">
   <p>{{ post.excerpt }}</p>
   <a href="{{ post.url | absolute_url }}" class="btn btn-block stretched-link">

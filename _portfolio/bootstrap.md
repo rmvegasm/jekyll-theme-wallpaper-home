@@ -2,7 +2,8 @@
 layout: post
 title: Bootstrap
 img: assets/img/portfolio/bootstrap.png
-date: 2019-04-16 19:43 -0400
+date: 2019-03-16 19:43 -0400
+no-date: true
 description: >
   Build responsive, mobile-first projects on the web with the world’s most
   popular front-end component library

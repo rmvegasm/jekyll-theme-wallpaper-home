@@ -1,5 +1,5 @@
-  {% if page.tags %}
-    {% for tag in page.tags %}
+  {% if post.tags %}
+    {% for tag in post.tags %}
       <span class="badge badge-pill
       {% if site.dark %} badge-light
       {% else %} badge-dark {% endif %}">{{ tag }}</span>

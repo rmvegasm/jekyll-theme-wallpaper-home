@@ -8,7 +8,9 @@ layout: page
   <hr>
   {% endif %}
   <h1>{{ page.title }}</h1>
+  {% unless page.no-date %}
   <h2 class="lead text-muted">{{ page.date | date_to_string }}</h2>
+  {% endunless %}
   {% include tags.html %}
   <hr>
 </div>
