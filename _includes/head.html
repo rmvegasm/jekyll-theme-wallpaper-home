@@ -46,6 +46,15 @@
 
     <!-- Custom styles for this template -->
     
+    {% include resolve-dark.liquid %}
+    {% if site.syntax-theme %}
+      {% assign theme = site.syntax-theme %}
+    {% elsif dark %}
+      {% assign theme = "assets/css/gruvbox.css" %}
+    {% else %}
+      {% assign theme = "assets/css/gruvbox-light.css" %}
+    {% endif %}
+    <link href="{{ theme | absolute_url }}" rel="stylesheet">
     <link href="{{ 'assets/css/wallpaper-home.css' | absolute_url }}" rel="stylesheet">
   
   </head>
