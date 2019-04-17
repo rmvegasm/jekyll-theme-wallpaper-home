@@ -2,7 +2,8 @@
 layout: default
 ---
 
-<main class="container {% if site.dark %} bg-dark 
+{% include resolve-dark.liquid %}
+<main class="container {% if dark %} bg-dark 
    {% else %} bg-light text-dark {% endif %} d-flex flex-column
    flex-fill p-4">
   {{ content }}

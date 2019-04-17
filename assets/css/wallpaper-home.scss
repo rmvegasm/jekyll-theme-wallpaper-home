@@ -98,9 +98,9 @@ code {
 /* Syntax Highlighting */
 
 {% if site.syntax-theme %}
-{% include_relative {{ site.syntax-theme }} %}
+  {% include_relative {{ site.syntax-theme }} %}
 {% elsif site.dark %}
-{% include_relative gruvbox.css %}
+  {% include_relative gruvbox.css %}
 {% else %}
-{% include_relative gruvbox-light.css %}
+  {% include_relative gruvbox-light.css %}
 {% endif %}

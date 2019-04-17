@@ -1,6 +1,7 @@
+{% include resolve-dark.liquid %}
 <footer class="mt-auto text-center 
   {% unless page.layout == 'home' %}
-    {% if site.dark %} bg-dark 
+    {% if dark %} bg-dark 
     {% else %} bg-light text-dark
     {% endif %}
   {% endunless %}">

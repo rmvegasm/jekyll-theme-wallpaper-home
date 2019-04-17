@@ -57,8 +57,9 @@ Or install it yourself as:
 
 - `background-img:` the relative path to the image to be used as wallpaper.
 
-- `overlay-top:, overlay-bottom:` the wallpaper image is overlaid by a black, semi transparent layer to improve
-  readability. These two values control the opacity at the top and bottom.
+- `overlay-top:, overlay-bottom:` the wallpaper image is overlaid by a black,
+  semi transparent layer to improve readability. These two values control the
+  opacity at the top and bottom.
 
 - `intro-width:` the width of the intro message displayed in the home page. You can adjust this
   to accomodate the length of your text.
@@ -68,7 +69,8 @@ Or install it yourself as:
   link in the page, including social icons in the footer.
   
 - `dark:` boolean, if true the the site is rendered with light text over a dark
-  background.
+  background. This option also affects the syntax schema used, unless you
+  provide one explicitly via the `syntax-theme:` option.
  
 - `math:` boolean, set to `true` if you plan to use math. You can also set it in the
   frontmatter if you need math for only some pages rather than site--wide.
@@ -138,6 +140,10 @@ Don't touch.
 - **head:** the `<head>` element, and the opening `<body>`.
 
 - **header:** builds the navbar and the titlematter for page layouts.
+
+- **resolve.dark:** this snippet searches for the value of `dark` within the
+  site and page metadata, and assigns a variable `dark` accordingly. Is called
+  by `_includes/footer.html`, `_includes/tags.html` and `_layouts/page.html`.
 
 - **footer:** generates the icons and links for every value in `site.social`, appends the
   footer--text.

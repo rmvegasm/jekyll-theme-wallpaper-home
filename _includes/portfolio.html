@@ -1,7 +1,8 @@
+{% include resolve-dark.liquid %}
 {% if site.portfolio %}
 <div class="d-flex flex-wrap justify-content-around">
   {% for post in site.portfolio %}
-  <div class="card {% if site.dark %} bg-dark {% else %} bg-light text-dark {% endif %}
+  <div class="card {% if dark %} bg-dark {% else %} bg-light text-dark {% endif %}
   shadow rounded my-2"
     style="max-width: 21rem;">
       {% if post.img %}

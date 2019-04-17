@@ -86,7 +86,8 @@ Or install it yourself as:
 `dark:`
 
 : boolean, if true the the site is rendered with light text over a dark
-  background.
+  background. This option also affects the syntax schema used, unless you
+  provide one explicitly via the `syntax-theme:` option.
  
 `math:`
 
@@ -180,6 +181,12 @@ head:
 header:
 
 : builds the navbar and the titlematter for page layouts.
+
+resolve.dark:
+
+: this snippet searches for the value of `dark` within the
+  site and page metadata, and assigns a variable `dark` accordingly. Is called
+  by `_includes/footer.html`, `_includes/tags.html` and `_layouts/page.html`.
 
 footer:
 
