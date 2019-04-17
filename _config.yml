@@ -12,6 +12,7 @@ intro-width: 35em
 link-color: "#f47f00"
 dark: false
 math: true
+# theme: jekyll-theme-wallpaper-home
 
 # GOOGLE FONTS
 
@@ -19,7 +20,6 @@ google-fonts:
   main-font: "Open+Sans"
   header-font: "Oswald:300"
   code-font: "Source+Code+Pro"
-# theme: jekyll-theme-wallpaper-home
 
 # FOOTER LINKS
 social:
@@ -35,12 +35,12 @@ social:
   github: rmvegasm/jekyll-theme-wallpaper-home
   instagram:
   keybase:
-  linkedin:
+  linkedin: # full url
   pinterest:
-  researchgate:
+  researchgate: # full url
   reddit:
   soundcloud:
-  stack_exchange:
+  stack_exchange: # full url
   tumblr:
   vimeo:
   wordpress:
