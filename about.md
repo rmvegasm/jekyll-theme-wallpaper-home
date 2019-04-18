@@ -182,7 +182,7 @@ header:
 
 : builds the navbar and the titlematter for page layouts.
 
-resolve.dark:
+resolve-dark:
 
 : this snippet searches for the value of `dark` within the
   site and page metadata, and assigns a variable `dark` accordingly. Is called

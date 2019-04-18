@@ -141,7 +141,7 @@ Don't touch.
 
 - **header:** builds the navbar and the titlematter for page layouts.
 
-- **resolve.dark:** this snippet searches for the value of `dark` within the
+- **resolve-dark:** this snippet searches for the value of `dark` within the
   site and page metadata, and assigns a variable `dark` accordingly. Is called
   by `_includes/footer.html`, `_includes/tags.html` and `_layouts/page.html`.
 
