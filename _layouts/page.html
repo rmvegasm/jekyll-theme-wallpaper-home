@@ -3,7 +3,7 @@ layout: default
 ---
 
 {% include resolve-dark.liquid %}
-<main class="container {% if dark %} bg-dark 
+<main class="{% if dark %} bg-dark 
    {% else %} bg-light text-dark {% endif %} d-flex flex-column
    flex-fill p-4">
   {{ content }}

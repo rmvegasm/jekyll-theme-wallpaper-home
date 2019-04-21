@@ -2,7 +2,7 @@
 layout: page
 ---
 
-<div class="container">
+<div>
   {% if page.img %}
   <img src="{{ page.img | absolute_url }}" class="img-fluid d-block mx-auto" alt="page.img">
   <hr>
@@ -14,7 +14,7 @@ layout: page
   {% include tags.html %}
   <hr>
 </div>
-<div class="container">
+<div>
   {{ content }}
   <hr>
 </div>
