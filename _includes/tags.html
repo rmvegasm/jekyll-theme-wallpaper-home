@@ -1,3 +1,5 @@
+<!-- _includes/tags.html -->
+
 {% include resolve-dark.liquid %}
 {% if post.tags %}
   {% for tag in post.tags %}
@@ -6,3 +8,5 @@
     {% else %} badge-dark {% endif %}">{{ tag }}</span>
   {% endfor %}  
 {% endif %}
+
+<!-- _includes/tags.html EOF-->
