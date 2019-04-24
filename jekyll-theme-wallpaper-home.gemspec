@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-theme-wallpaper-home"
-  spec.version       = "0.0.1"
+  spec.version       = "0.1.0"
   spec.authors       = ["rmvegasm"]
   spec.email         = ["rmvegasm@gmail.com"]
 
