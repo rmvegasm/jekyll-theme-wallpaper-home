@@ -1,5 +1,5 @@
-**IMPORTANT:** this is not released yet! Do not install unless you intend to
-contribute ;)
+[![Generic
+badge](https://img.shields.io/badge/version-0.1-green.svg)](https://shields.io/)
 
 # The Wallpaper Home Jekyll Theme
 
