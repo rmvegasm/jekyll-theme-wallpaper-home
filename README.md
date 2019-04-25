@@ -1,5 +1,5 @@
 [![Generic
-badge](https://img.shields.io/badge/version-0.1-green.svg)](https://shields.io/)
+badge](https://img.shields.io/badge/version-0.1.1-green.svg)](https://shields.io/)
 
 # The Wallpaper Home Jekyll Theme
 
