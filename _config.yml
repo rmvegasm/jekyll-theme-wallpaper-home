@@ -65,9 +65,9 @@ kramdown:
 syntax-theme:
 
 # PAGINATION
-
-paginate: 5
-paginate_path: "blog/page:num"
+#
+#paginate: 5
+#paginate_path: "blog/page:num"
 
 # PORTFOLIO
 
@@ -75,5 +75,5 @@ collections:
   portfolio:
     output: true
 
-plugins: [jekyll-seo-tag, jekyll-feed, jekyll-paginate]
-exclude: ["Gemfile", "Gemfile.lock", "type-on-strap.gemspec", "*.gem", "LICENSE", "README.md", "screenshot.png", "package.json", "node_modules", "gulpfile.js", ".idea/*"]
+plugins: [jekyll-seo-tag, jekyll-feed] #, jekyll-paginate]
+exclude: ["Gemfile", "Gemfile.lock", "jekyll-theme-wallpaper-home.gemspec", "*.gem", "LICENSE", "README.md", "screenshot.png"]
