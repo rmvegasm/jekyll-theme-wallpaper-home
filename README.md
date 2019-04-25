@@ -37,9 +37,12 @@ Or install it yourself as:
 
 ### For github-pages
 
-This theme is not supported by github-pages, so it won't build from the gem. If
-you want to use it for that purpose you need to clone, fork or download the repo
-and replace files with your own.
+Edit your `_config.yml`, comment out the `theme:` line and add this one:
+
+```yaml
+#theme: jekyll-theme-wallpaper-home
+remote_theme: rmvegasm/jekyll-theme-wallpaper-home
+```
  
 ## Usage
 
