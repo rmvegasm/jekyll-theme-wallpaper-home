@@ -13,6 +13,7 @@ includes a layout for a blog and a portfolio.
 
 
 ## Installation
+### For use outside github-pages
 
 Add this line to your Jekyll site's `Gemfile`:
 
@@ -34,6 +35,12 @@ Or install it yourself as:
 
     $ gem install jekyll-theme-wallpaper-home
 
+### For github-pages
+
+This theme is not supported by github-pages, so it won't build from the gem. If
+you want to use it for that purpose you need to clone, fork or download the repo
+and replace files with your own.
+ 
 ## Usage
 
 ### The `_config.yml` file
